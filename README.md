@@ -74,8 +74,10 @@
 
       
    4. Prior to creating a flask app, I signed up for a new account on **`Docker Hub`** by connecting my **GitHub** account, and created a directory named "**`raqssoriano`**". In this directory, I created a repository called "**`hha540docker`**". This was instrumental in successfully deploying the flask app I had previously created.
-   5. ATTACH!!![screenshot=1]
-   6. In the **`Cloud Shell Editor`**, I created a new file named "**`dockerfile`**" in the "**`docker-hw`**" directory, which contains instructions on how to create or build a _**Docker image**_. This is taken from [Professor Hants' HHA-504-2024 GitHub repository](https://github.com/hantswilliams/HHA-504-2024/blob/main/other/module10/Dockerfile).
+      
+      <img src="https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/Docker%20Hub/1.png" width="550" />.
+      
+   5. In the **`Cloud Shell Editor`**, I created a new file named "**`dockerfile`**" in the "**`docker-hw`**" directory, which contains instructions on how to create or build a _**Docker image**_. This is taken from [Professor Hants' HHA-504-2024 GitHub repository](https://github.com/hantswilliams/HHA-504-2024/blob/main/other/module10/Dockerfile).
 
       ```dockerfile
       FROM python:3.11-alpine
