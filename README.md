@@ -2,7 +2,7 @@
 # **HHA504 || Deploying and Managing Containers with GCP Cloud Run and Azure Container Apps**
 ---
 
-#### **🎯** This task is part of my assignment focused on deploying and managing containers using [GCP Cloud Run](https://github.com/raqssoriano/HHA504_assignment_containers/edit/main/README.md#-deploy-to-gcp-cloud-run) and Azure Container Apps. I am learning [how to containerize an application with Docker](https://github.com/raqssoriano/HHA504_assignment_containers/edit/main/README.md#-containerize-a-simple-application) and deploy it on both platforms.
+#### **🎯** This task is part of my assignment focused on deploying and managing containers using [GCP Cloud Run](https://github.com/raqssoriano/HHA504_assignment_containers/edit/main/README.md#-deploy-to-gcp-cloud-run) and [Azure Container Apps](https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/README.md#-deployment-using-azure-container-apps). I am learning [how to containerize an application with Docker](https://github.com/raqssoriano/HHA504_assignment_containers/edit/main/README.md#-containerize-a-simple-application) and deploy it on both platforms.
 
 ---
 ---
