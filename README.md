@@ -4,6 +4,8 @@
 
 #### **🎯** This task is part of my assignment focused on deploying and managing containers using [GCP Cloud Run](https://github.com/raqssoriano/HHA504_assignment_containers/edit/main/README.md#-deploy-to-gcp-cloud-run) and [Azure Container Apps](https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/README.md#-deployment-using-azure-container-apps). I am learning [how to containerize an application with Docker](https://github.com/raqssoriano/HHA504_assignment_containers/edit/main/README.md#-containerize-a-simple-application) and deploy it on both platforms.
 
+#### **📌** My [Reflections on the deployment process and Final thoughts](https://github.com/raqssoriano/HHA504_assignment_containers/edit/main/README.md#-reflections-on-the-deployment-process) on both platforms.
+
 ---
 ---
 
@@ -26,7 +28,7 @@
 
 4. [Publish to Docker Hub](https://github.com/hantswilliams/HHA-504-2024/blob/main/other/module10/deployment_instructions.md#publish-to-docker-hub)
 
- - (1) `docker login -u {username}`
+ - (1) **`docker login -u raqssoriano`**
  - (2) *command structure*:
       - **`docker tag hha504docker:v1 raqssoriano/hha504docker:v1`**
  - (3) *command to push structure*:
@@ -98,7 +100,7 @@
 
       <img src="https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/Docker%20Hub/8.png" width="550" />.
      
-   2. I navigated to GCP and searched for **`Cloud Run`** in the search bar, and clicked **`Deploy Container`** and **`Service`**.
+   2. I navigated to _**GCP**_ and searched for **`Cloud Run`** in the search bar, and clicked **`Deploy Container`** and **`Service`**.
 
       <img src="https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/GCP-docker/9.png" width="550" />.
 
@@ -120,14 +122,49 @@
 ---
 ## ☞ *Deployment Using Azure Container Apps*
 
-<<< TO BE COMPLETED >>>
+   1. I navigated to _**Azure**_ and searched for **`Container Apps`** in the search bar, and **created** a **Container App** named "**`raqs504flask`**." See the screenshots below.
+
+      <img src="https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/Azure%20Container%20App/1.png" width="550" />.
+
+      <img src="https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/Azure%20Container%20App/2.png" width="550" />.
+
+   2. Similar to GCP Cloud Run, I ensured that the configuration process was completed by creating a **resource group** called "**`my504dockerhw`**."
+      
+      <img src="https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/Azure%20Container%20App/3.png" width="550" />.
+
+   3. I deployed the containerized application using the Docker image that I initially pushed or deployed to **`Docker Hub`**.
+
+      <img src="https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/Azure%20Container%20App/4.png" width="550" />.
+
+      <img src="https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/Azure%20Container%20App/5.png" width="550" />.
+
+      <img src="https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/Azure%20Container%20App/6.png" width="550" />.
+
+      <img src="https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/Azure%20Container%20App/7.png" width="550" />.
+
+      <img src="https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/Azure%20Container%20App/8.png" width="550" />.
+
+   4. Similar to GCP Cloud Run, I [tested the deployed application](https://raqs504flask.thankfulforest-d1c4952d.centralus.azurecontainerapps.io/) to make sure it's running correctly.
+    
+      <img src="https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/Azure%20Container%20App/9.png" width="550" />.
+
+      <img src="https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/Azure%20Container%20App/10.png" width="550" />.
+
+      <img src="https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/Azure%20Container%20App/11.png" width="550" />.
 
 
 ---
 ---
+
 ## ☞ *Reflections on the Deployment Process*
 
-<<< TO BE COMPLETED >>>
+- 📌 **`GCP Cloud Run`**:
+  - I did not have any issues during the deployment process. It was pretty easy. I have to give credit to Professor Hants' zoom class video recording and the code/script examples in his GitHub repository.
+  - Although I wonder if I can do it on my own without guidance from my professor. I would probably have difficulty figuring out which code/script to use in Docker Hub and in attempting to deploy the Docker image to GCP Cloud Run. This might be challenging, but I might consider searching for the correct documentation. If I remember correctly from the recorded video, my professor also looked up the script to be used. This might work for me in the future.
+  
+- 📌 **`Azure Container App`**:
+  - In [step 3, where I attempted to deploy the Docker image from my Docker Hub](https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/Azure%20Container%20App/4.png), this is the part that caused my deployment process to fail **multiple times**. In **Registry Login Server**, I initially clicked the *information icon* (the icon with an "i" that appears after the registry login server field) and followed the example by first typing my Docker Hub username. After watching the [YouTube video by Microsoft DevRadio](https://www.youtube.com/watch?v=y81Kpqaf9u0&t=31s), I left "**`docker.io`** in the registry login server field as it is, then I successfully deployed the container app I created in Azure.
+  - I noticed that Azure _**automatically generates**_ a unique identifier for my newly created container app, [as seen in the highlighted application URL](https://github.com/raqssoriano/HHA504_assignment_containers/blob/main/Azure%20Container%20App/11.png), which includes the word "**`thankfulforest`**." As compared to GCP, I have the flexibility to create my own unique identifier, although I'm not quite sure if GCP has the same feature as Azure that automatically generates this.
 
-
-        
+- 📌 **`Final Thoughts`**:
+  - If I hadn't had issues with the registry login server field as previously mentioned, I can say that the deployment process was pretty much the same on both platforms, with the creation and deployment steps being easy to follow. With that being said, I like both GCP Cloud Run and Azure Container App. I find this assignment quite enjoyable and interesting because it seems that I can apply my creative side if I gain more experience in figuring out the code/script to use for images or perhaps videos that I want to upload and deploy to a certain portal. When I get more experience, I might apply everything I've learned in this assignment to create a personal or portfolio website to highlight my professional journey and showcase all my work or assignments/projects from grad school. This will provide an interesting way for potential employers to learn about my background and skills or expertise.🤓
